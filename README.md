@@ -1,32 +1,93 @@
-# React Native Navigation Demo
+# Todo List App
 
-A React Native application demonstrating the implementation of Navigation, Tabs, Drawer, and various React Hooks.
+A feature-rich React Native todo list application with modern UI, dark mode support, and comprehensive task management capabilities.
 
 ## Features
 
-- **Navigation**: Using React Navigation v6
-- **Bottom Tabs**: Home, Profile, and Settings screens
-- **Drawer Navigation**: Accessible from any screen
-- **React Hooks Implementation**:
-  - useState (in Home and Settings screens)
-  - useEffect (in Home screen for timer)
-  - useCallback (in Profile screen)
-  - useMemo (in Settings screen)
+### Core Functionality
+- ✅ Task Management
+  - Add, delete, and complete tasks
+  - Priority levels (high, medium, low) with color coding
+  - Task completion status tracking
+  - Date-based task grouping
 
-## Prerequisites
+### Screens
+1. **Today's Tasks (Home Screen)**
+   - View and manage today's tasks
+   - Quick add/delete functionality
+   - Task completion toggles
+   - Priority level indicators
 
-Before you begin, ensure you have the following installed:
-- [Node.js](https://nodejs.org/)
-- [React Native CLI](https://reactnative.dev/docs/environment-setup)
-- [Android Studio](https://developer.android.com/studio) (for Android development)
-- [Xcode](https://developer.apple.com/xcode/) (for iOS development, macOS only)
+2. **Task History (Profile Screen)**
+   - Historical view of completed tasks
+   - Tasks grouped by date
+   - Completion status tracking
+   - Detailed task information
 
-## Installation
+3. **Upcoming Tasks (Settings Screen)**
+   - Future task management
+   - Priority level settings
+   - Task scheduling
+   - Reminder configuration
+
+### Navigation & UI
+- 📱 Modern Navigation System
+  - Bottom tab navigation
+  - Drawer navigation with multiple options
+  - Smooth screen transitions
+
+- 🎨 User Interface
+  - Material Design icons
+  - Dark mode support
+  - Responsive layout
+  - Color-coded priority levels
+
+### Additional Features
+- 🌙 Dark Mode Toggle
+- 🔔 Task Reminders
+- 📊 Task Categories
+- 📈 Statistics View (Coming Soon)
+- 💾 Backup & Restore (Coming Soon)
+- ❓ Help & Support Section (Coming Soon)
+
+## Technical Details
+
+### Built With
+- React Native
+- React Navigation (Drawer & Bottom Tabs)
+- React Native Vector Icons
+- React Native Reanimated
+- React Native Gesture Handler
+- React Native Safe Area Context
+
+### Project Structure
+```
+Project/
+├── android/          # Android native files
+├── ios/             # iOS native files
+├── screens/         # Screen components
+│   ├── HomeScreen.jsx
+│   ├── ProfileScreen.jsx
+│   └── SettingsScreen.jsx
+├── App.jsx          # Main application file
+└── package.json     # Project dependencies
+```
+
+## Getting Started
+
+### Prerequisites
+- Node.js (>= 18)
+- npm or yarn
+- React Native CLI
+- Android Studio (for Android development)
+- Xcode (for iOS development, macOS only)
+
+### Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/itxsamad1/Testing-React-Native-Libs.git
-cd Testing-React-Native-Libs
+git clone [repository-url]
+cd Project
 ```
 
 2. Install dependencies:
@@ -41,72 +102,36 @@ pod install
 cd ..
 ```
 
-## Running the App
-
-### For Android:
-
-1. Start an Android emulator or connect a physical device
-
-2. Run the following command:
+4. Start the application:
 ```bash
-npx react-native run-android
+# For Android
+npm run android
+
+# For iOS
+npm run ios
 ```
 
-### For iOS (macOS only):
+## Development Notes
 
-1. Run the following command:
-```bash
-npx react-native run-ios
-```
+### Recent Updates
+- Added proper vector icons support
+- Implemented dark mode functionality
+- Fixed navigation issues
+- Enhanced drawer menu content
+- Added comprehensive task management features
+- Improved UI/UX with proper styling
 
-## Project Structure
+### Known Issues
+- Some Gradle deprecation warnings (will be addressed in future updates)
+- Minor UI adjustments needed for different screen sizes
 
-```
-project/
-├── App.jsx              # Main application file
-├── screens/
-│   ├── HomeScreen.jsx   # Home screen with counter and timer
-│   ├── ProfileScreen.jsx # Profile screen with user info
-│   └── SettingsScreen.jsx # Settings screen with toggles
-└── ...
-```
-
-## Dependencies
-
-- @react-navigation/native
-- @react-navigation/bottom-tabs
-- @react-navigation/drawer
-- react-native-reanimated
-- react-native-gesture-handler
-- react-native-screens
-- react-native-safe-area-context
-- react-native-vector-icons
-
-## Troubleshooting
-
-If you encounter any issues:
-
-1. Clear the Metro bundler cache:
-```bash
-npx react-native start --reset-cache
-```
-
-2. Clean and rebuild Android:
-```bash
-cd android
-./gradlew clean
-cd ..
-npx react-native run-android
-```
-
-3. For iOS, clean the build folder:
-```bash
-cd ios
-xcodebuild clean
-cd ..
-npx react-native run-ios
-```
+## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-This project is open source and available under the MIT License.
+## Acknowledgments
+- React Native Community
+- React Navigation Team
+- Material Design Icons
